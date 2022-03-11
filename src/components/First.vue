@@ -1,7 +1,10 @@
 <template>
-  <div >
-    <div :class="className">haithem</div>
-
+  <div>
+    <div>haithem</div>
+    <h5>{{ salary }}</h5>
+    <button v-on:click="incrementSalary()">incrementSalary</button>
+    <button v-on:click="decrementSalary()">decrementSalary</button>
+    <button v-on:click="resetSalary()">resetSalary</button>
   </div>
 </template>
 
@@ -9,24 +12,23 @@
 
 export default {
   name: "First",
-  components: {},
-  /* props: {
-     msg: String,
-     phone: Number
-   },*/
+
   data() {
     return {
-      num: 100,
-      name: "haithem",
-      country: ['tunis ', 'algeria'],
-      verif: true,
-      className: "fl"
+      salary: 500
+
     }
   },
+
   methods: {
-    getName() {
-      return this.name;
+    incrementSalary() {
+      this.salary += 100;
+    }, decrementSalary() {
+      this.salary -= 100;
     },
+    resetSalary() {
+      this.salary = 0.00;
+    }
   }
 
 
