@@ -1,10 +1,7 @@
 <template>
-  <div>
-    <h1>haithem</h1>
-    <p>{{ num }}</p>
-    <p>{{ name }}</p>
-    <p> get name function {{ getName()  }}</p>
-    <p v-for=" c in country">{{ c }}</p>
+  <div >
+    <div :class="className">haithem</div>
+
   </div>
 </template>
 
@@ -13,31 +10,32 @@
 export default {
   name: "First",
   components: {},
- /* props: {
-    msg: String,
-    phone: Number
-  },*/
+  /* props: {
+     msg: String,
+     phone: Number
+   },*/
   data() {
-    return  {
-      num:100 ,
-      name:"haithem",
-      country:['tunis ','algeria'] ,
-      verif:true
+    return {
+      num: 100,
+      name: "haithem",
+      country: ['tunis ', 'algeria'],
+      verif: true,
+      className: "fl"
     }
   },
- methods: {
-    getName(n) {
-      return this.n;
+  methods: {
+    getName() {
+      return this.name;
     },
- }
+  }
 
 
 }
 </script>
 
 <style scoped>
-h1 {
-  color: cornflowerblue;
-  font-size: 20px;
+.fl {
+  font-size: 40px;
+  color: red;
 }
 </style>
