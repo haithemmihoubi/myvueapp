@@ -1,15 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <h1>welcome haithem</h1>
-  <First></First>
+
+  <First msg="vue3 " > </First>
 </template>
 
 <script>
 import First from "@/components/First";
+import Second from "@/components/Second";
 export default {
   name: 'App',
   components: {
-    First
+    First ,
+    Second
   }
 
 }

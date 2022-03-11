@@ -1,24 +1,38 @@
 <template>
   <div>
     <h1>haithem</h1>
-    <Second></Second>
+    <p>{{ num }}</p>
+    <p>{{ name }}</p>
+    <p v-for=" c in country">{{ c }}</p>
   </div>
 </template>
 
 <script>
-import Second from "@/components/Second";
+
 export default {
   name: "First",
-  components: {
-    Second
-  }
+  components: {},
+ /* props: {
+    msg: String,
+    phone: Number
+  },*/
+  data() {
+    return  {
+      num:100 ,
+      name:"haithem",
+      country:['tunis ','algeria'] ,
+      verif:true
+    }
+  },
+
+
 
 }
 </script>
 
 <style scoped>
 h1 {
-  color: red;
+  color: cornflowerblue;
   font-size: 20px;
 }
 </style>
