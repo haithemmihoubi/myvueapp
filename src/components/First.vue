@@ -1,12 +1,17 @@
 <template>
   <div>
     <h1>haithem</h1>
+    <Second></Second>
   </div>
 </template>
 
 <script>
+import Second from "@/components/Second";
 export default {
   name: "First",
+  components: {
+    Second
+  }
 
 }
 </script>
