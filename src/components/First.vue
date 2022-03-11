@@ -3,6 +3,7 @@
     <h1>haithem</h1>
     <p>{{ num }}</p>
     <p>{{ name }}</p>
+    <p> get name function {{ getName()  }}</p>
     <p v-for=" c in country">{{ c }}</p>
   </div>
 </template>
@@ -24,7 +25,11 @@ export default {
       verif:true
     }
   },
-
+ methods: {
+    getName(n) {
+      return this.n;
+    },
+ }
 
 
 }
