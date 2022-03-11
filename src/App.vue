@@ -1,15 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <h1 class="title">welcome to  our app</h1>
-  <h1 class="title">Haithem Mihoubi</h1>
-
+  <h1>welcome haithem</h1>
+  <First></First>
 </template>
 
 <script>
-
+import First from "@/components/First";
 export default {
   name: 'App',
-  components: {}
+  components: {
+    First
+  }
+
 }
 </script>
 <style>
@@ -21,7 +23,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-.title {
-  color: red;
-}
+
+
 </style>
