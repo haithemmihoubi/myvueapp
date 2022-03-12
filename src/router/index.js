@@ -16,7 +16,12 @@ const routes = [
         path: '/contact' ,
         name:'contact' ,
         component: ()=>import('../views/Contact')
-    }
+    },
+    {
+        path: '/users/:name' ,
+        name:'users' ,
+        component: ()=>import('../views/Users')
+    },
 ]
 
 const router = createRouter({
