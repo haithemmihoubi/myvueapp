@@ -18,7 +18,7 @@ const routes = [
         component: ()=>import('../views/Contact')
     },
     {
-        path: '/users/:name' ,
+        path: '/users' ,
         name:'users' ,
         component: ()=>import('../views/Users')
     },
